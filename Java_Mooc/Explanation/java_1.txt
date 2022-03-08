@@ -1,0 +1,68 @@
+# java_1
+
+
+# everything in java should start with a class and inside it, there is a method and inside starts the code and we write System.out.println to print into the output stream of the system like this:
+
+class Helloworld{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+
+# to run the file we should write in the terminal after >> cd file.path >> javac filename.java / to compile the file
+ then java classname / to run the code opposing this class
+
+>>>>> javac project.java / java Helloworld
+
+# to include a package of classes write >> package packagename
+then >> javac -d . filename.java >> then java packagename.classname
+
+>>>>> javac -d . project.java / java pack.Helloworld
+
+
+
+# instance members vs static members
+
+members > represent attributes and variables
+
+instance / related to objects
+static / not related to objects
+
+
+# Encapsulation
+
+> attributes / private (Encapsulated)
+> methods / public
+
+
+# to make accessible attributes, make them private then make public methods called getters and setters
+
+
+# Inheritance
+
+parent and child
+
+child inherits from parent means child extends animal
+
+>> super point to parent and found inside child but it can see only the public members, so we can overcome this by a modifier called protected, for that, you can't access these attributes
+outside the class but, if you inherits from this class, you can access normally. with private, you can't aceess even if you inherits from the class.
+
+
+
+# Polymorphism
+
+> function overloading: same name, inheritance, different parameters list
+> functio overriding: different classes, inheritance, same parameters list
+- compile time and run time are based on reference and class
+
+
+# Abstraction
+> layer of common attributes and methods
+> other classes inherit from abstract class and we can't create object from abstract class because methods are not implemented or do nothing but we can define methods as abstract
+and it can also have normal methods // and any class extends from abstract class must implement abstract methods inside the abstract class or will get error
+
+>>> all mutual behaviors by name, put it into one layer and make it abstract, so, abstraction is a way of organizing the code
+
+
+# Applets > refers ro small applications runs on the browser and it's mainly html tags called applet and it calls the server to get .class java files that becomes part of html output

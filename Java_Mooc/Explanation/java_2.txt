@@ -1,0 +1,136 @@
+# java_2
+
+
+# Flow control
+
+>> Branching
+	>> if else
+	>> switch
+>> Iteration
+	>> while loop
+	>> do while
+	>> for loop
+
+
+# Modifiers and Access Specifiers (essential classes)
+	>> Modifiers [public-private-protected]
+	if you didn't use any of these, java will use the default which is called (friendly modifier)
+	>> Access specifiers
+	- final access specifier / last version 
+	{final class>no inheritance, final method>no override, final variable>no edits}
+
+	- static access specifier / constant behavior
+	{static method, static variable, NO static class}
+
+	- abstract access specifier / NO variables
+	{abstract class, abstract method}
+
+	- native access specifier / method that try to run external application
+	{native method}
+
+	- synchronized access specifier / method expect to be called from more than one thread
+	{synchronized method}
+
+
+# classes
+	-Graphics / take methods like drawline()
+	- Color / take constructor
+	- there are methods inside graphics related to color like setColor and components inside java/setBackground
+	 and they take paramet as object from color class
+	
+>> you can use it like this
+public void paint(Graphics g) {
+Color c = new Color(100,200,300);
+g.setColor(c);
+}
+
+
+>> font class
+
+Font(familyname,style,size)
+
+g.setFont(f);
+
+>> to know the available fonts of java write this code
+Toolkit t = Toolkit.getDefaultToolkit();
+String [] s = t.getFontList();
+
+
+# Exception
+> an exception is an object that's created when an abnormal situation arises in your program during runtime
+
+	# Throwable
+	>> error
+	>> exception
+		>> unchecked exceptions(runtime exception)
+		>> checked exceptions(io exception)
+
+
+	# how to catch exceptions
+		>> try{} / the code
+		>> catch(){} / for the exception
+		>> finally{} / code executes finally if there was an exception or not
+
+	# exception delegation
+	> define it inside the function like this
+	
+	public class test {
+		public void testMethod() throws XYZException {
+		
+		}
+	}
+
+
+# Arrays and Strings
+
+# Identifiers and Data types
+# Operators
+
+
+# Interfaces
+	> fully abstract class
+	> methods are public, static, final
+
+# Multi Threading
+
+> thread is a single execution path
+
+	>> Daemon thread (system thread / automatic)
+	- Garbage collection thread
+	- Event dispatcher thread
+
+	>> User created thread
+	- Main thread
+
+
+>>> to create a thread, 
+1- extend Thread class
+2- override method run and write your code inside
+3- create object from the class that extends Thread class
+4- obj.start();
+
+> class Thread / methods > Start(),Run(),Sleep(),Suspend(),Resume(),Stop()
+> class Object / methods > Wait(),notify(),notifyAll()
+
+
+# Thread life cycle
+
+
+# Inner class types:
+	>> Normal Inner Class
+	>> Static Inner Class
+	>> Local Inner Class
+	>> Anonymous Inner Class
+
+
+# Event Handling
+
+	>> Event handling model
+		>> event source
+		>> event listener
+
+
+# Events > Listener Interface > Methods
+
+# Adapter class
+	 window listener > window adapter
